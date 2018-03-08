@@ -23,7 +23,7 @@ public class Equip {
 
     id = id;
 
-   WeaponsList.ShowAllWeaponParams(id);
+  // WeaponsList.ShowAllWeaponParams(id);
 
  }
 

@@ -7,3 +7,7 @@ src/.idea/workspace.xml
 *.xml
 src/.idea/workspace.xml
 *.xml
+
+\.idea/
+
+src/\.classpath

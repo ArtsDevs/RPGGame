@@ -8,7 +8,7 @@ public class Start {
     public static void main(String[] args) {
         System.out.println("Witaj w Gothic 8 nie arkania");
 
-        MakePlayer.setNameAndClass();
+        MakePlayer.setName();
 
         System.out.println("Twoja przygoda zaczyna sie w zrujnowanym obozowisku,");
         System.out.println("Byles jencem wojennym a obozowisko Twoich wrogow zostalo zaatakowane.");

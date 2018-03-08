@@ -12,24 +12,24 @@ public class Player {
 	static Scanner scanner = new Scanner(System.in);
 
 	private static String nameOfThePlayer;
-	private static double health = 100;
-	private static double healthMax = 100;
-	private static double mana = 30;
-	private static double manaMax = 30;
-	private static double speedAttack = 1.0;
-	private static double deffence = 5;
-	private static double attack = 5;
-	private static double money = 0;
-	private static int level = champLevel();
+	private static double health;
+	private static double healthMax;
+	private static double mana;
+	private static double manaMax;
+	private static double speedAttack;
+	private static double deffence;
+	private static double attack;
+	private static double money;
+	private static int level = 1;
 	private static double exp = 0;
-	private static double block = 0;
-	private static int myClass = 0;
+	private static double block;
+	private static int myClass;
 
-	private static double agility = 5;
-	private static double intelligence = 5;
-	private static double vitality = 5;
-	private static double strength = 5;
-	private static double crit = 1 * agility;
+	private static double agility;
+	private static double intelligence;
+	private static double vitality;
+	private static double strength;
+	private static double crit;
 
 	//GETTERS
 	public static String getName(){

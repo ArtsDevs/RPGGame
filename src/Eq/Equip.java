@@ -1,8 +1,7 @@
 package Eq;
 
-import Items.Items;
-import Items.Weapons;
-import Items.WeaponsList;
+import Items.Weapons.Weapons;
+import Items.Weapons.WeaponsList;
 
 public class Equip {
 
@@ -23,7 +22,7 @@ public class Equip {
 
     id = id;
 
-   WeaponsList.ShowAllWeaponParams(id);
+  // WeaponsList.ShowAllWeaponParams(id);
 
  }
 

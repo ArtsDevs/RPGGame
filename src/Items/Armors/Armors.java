@@ -1,6 +1,6 @@
-package Items;
+package Items.Armors;
 
-public class Jewelery extends Items{
+public class Armors extends Items {
 
     public double improveHealth;
     public double improveMana;
@@ -16,12 +16,12 @@ public class Jewelery extends Items{
     public double improveCrit;
 
     public double requireStrength;
-    public double durablity = 0;
+    public double durablity;
 
-    public Jewelery(int dimension_x, int dimension_y, String name, int id, double improveHealth, double improveMana,
+    public Armors(int dimension_x, int dimension_y, String name, int id, double improveHealth, double improveMana,
                    double improveSpeedAttack, double improveDeffence, double improveAttack, double improveBlock,
                    double improveAgility, double improveIntelligence, double improveVitality, double improveStrength,
-                   double improveCrit, double requireStrength, double durablity){
+                   double improveCrit,double requireStrength, double durablity){
         super(name, dimension_x, dimension_y, id);
 
         this.improveHealth = improveHealth;
@@ -37,8 +37,7 @@ public class Jewelery extends Items{
         this.improveCrit = improveCrit;
         this.requireStrength = requireStrength;
         this.durablity = durablity;
+
     }
-
-
 
 }

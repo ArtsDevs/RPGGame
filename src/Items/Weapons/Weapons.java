@@ -1,6 +1,9 @@
-package Items;
+package Items.Weapons;
 
-public class Armors extends Items {
+import Items.Items;
+
+public class Weapons extends Items {
+
 
     public double improveHealth;
     public double improveMana;
@@ -17,8 +20,11 @@ public class Armors extends Items {
 
     public double requireStrength;
     public double durablity;
+    public int id;
 
-    public Armors(int dimension_x, int dimension_y, String name, int id, double improveHealth, double improveMana,
+
+
+    public Weapons(int dimension_x, int dimension_y, String name, int id, double improveHealth, double improveMana,
                    double improveSpeedAttack, double improveDeffence, double improveAttack, double improveBlock,
                    double improveAgility, double improveIntelligence, double improveVitality, double improveStrength,
                    double improveCrit,double requireStrength, double durablity){
@@ -41,3 +47,4 @@ public class Armors extends Items {
     }
 
 }
+

@@ -1,5 +1,7 @@
 package Items.Armors;
 
+import Items.Items;
+
 public class Armors extends Items {
 
     public double improveHealth;

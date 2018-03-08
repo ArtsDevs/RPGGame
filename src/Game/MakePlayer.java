@@ -1,5 +1,6 @@
 package Game;
 
+import Classes.Mage;
 import Classes.Rogue;
 import Classes.Warrior;
 
@@ -29,10 +30,10 @@ public class MakePlayer {
             Rogue rogue = new Rogue(100, 100, 30, 30, 1, 5, 5, 5, 5, 5, 5, name);
             System.out.println("Wybrałeś/aś łotra, powodzenia!");
         }
-        else if (Player.getMyClass() == 3){
-            //Szaman do stworzenia
-        }
-        else {
+        else if ((Player.getMyClass() == 3)){
+           Mage mage = new Mage(70, 70, 80, 80, 1, 3, 7, 3, 8, 4, 2, name);
+            System.out.println("Wybrałeś/aś maga, powodzenia z maną zią!");
+        }else {
             System.out.println("Podałeś złą cyfrę, popraw.");
             setNameAndClass();
         }

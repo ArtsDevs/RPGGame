@@ -1,5 +1,7 @@
 package Items.Jawelery;
 
+import Items.Items;
+
 public class Jewelery extends Items{
 
     public double improveHealth;

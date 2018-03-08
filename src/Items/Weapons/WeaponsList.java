@@ -1,7 +1,7 @@
-package Items;
+package Items.Weapons;
 
-import java.io.Console;
-import java.util.Arrays;
+import Items.Weapons.Weapons;
+
 import java.util.Scanner;
 
 
@@ -46,7 +46,7 @@ public class WeaponsList {
 // Tablica obiektów.
 
 
-    public static Weapons SwordsArray[] = {Weapon1, Weapon2, Weapon3, Weapon4, Weapon5, Weapon6, Weapon7, Weapon8};
+   public static Weapons SwordsArray[] = {Weapon1, Weapon2, Weapon3, Weapon4, Weapon5, Weapon6, Weapon7, Weapon8};
     Scanner odczyt = new Scanner(System.in);
 
 // METODY DO ZNAJDOWANIA OKRESLONYCH PARAMSÓW W TABLICY WEAPONS.
@@ -54,8 +54,6 @@ public class WeaponsList {
 //-------------------------------------------------------------------------------------------------------
     // Wybierz indeks itemu który miał zostać wysłany
     public static void FindInArrayID(int iD) {
-
-        iD = iD;
 
         for (int i = 0; i < SwordsArray.length; i++) {
 

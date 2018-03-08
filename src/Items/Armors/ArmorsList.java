@@ -1,4 +1,4 @@
-package Items;
+package Items.Armors;
 
 public class ArmorsList {
 

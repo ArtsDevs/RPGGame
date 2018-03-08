@@ -1,6 +1,8 @@
-package Items;
+package Items.Shields;
 
-public class Shields extends Items {
+import Items.Items;
+
+public class Shields extends Items  {
 
     public double improveHealth;
     public double improveMana;

@@ -1,13 +1,8 @@
 import Game.Player;
-import Items.Armors;
-import Items.Weapons;
-import Items.WeaponsList;
+import Items.Weapons.WeaponsList;
 
-import Items.ArmorsList;
-import Items.JeweleryList;
-
-
-import static Items.WeaponsList.SwordsArray;
+import Items.Armors.ArmorsList;
+import Items.Jawelery.JeweleryList;
 
 public class Main {
 

@@ -1,5 +1,6 @@
 package Game;
 
+import Classes.Mage;
 import Classes.Rogue;
 import Classes.Warrior;
 
@@ -49,7 +50,10 @@ public class MakePlayer {
             else if (Player.getMyClass() == 3){
                 //Szaman do stworzenia
             }
-            else if(Player.getMyClass() > 3)
+            else if(Player.getMyClass() > 3){
+                Mage mage = new Mage(70, 70, 80, 80, 1, 3, 7, 3, 8, 4, 2, name);
+                System.out.println("Wybrałeś/aś maga, powodzenia z maną zią!");
+            }
 				try {
 					throw new InvalidClassRange("Wybierz ponownie");
 				} catch (InvalidClassRange e) {
@@ -59,5 +63,6 @@ public class MakePlayer {
 				}
         	Move.Camp();
         }
+           
     }
    

@@ -368,13 +368,7 @@ public class Player {
 			System.out.println("Zadales: " + damage + " punktow obrazen");
 			Monster.takeDamage(damage);
 		}
-	}
 
-	public static void equipEq(String nameOfTheItem, int itemID, double addHealth, double addMana){
-
-	}
-
-	public Player(){
 
 	}
 }

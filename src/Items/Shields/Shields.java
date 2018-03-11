@@ -20,6 +20,7 @@ public class Shields extends Items  {
     public double requireStrength;
     public double durablity;
     public boolean requireDualWielding;
+    public static int ShieldsEq[] = new int[100];
 
 
 
@@ -48,6 +49,19 @@ public class Shields extends Items  {
         this.requireDualWielding = requireDualWielding;
 
 
+    }
+    public static void InitShieldsEq(){
+        for(int x = 0;x<100;x++){
+            ShieldsEq[x] = -1;
+        }
+    }
+    public static void addShieldToEq(int addId){
+        for(int x = 0; x <100;x++){
+            if(ShieldsEq[x] == -1){
+                ShieldsEq[x] = ShieldsList.ShieldsArray[addId].id;
+                break;
+            }
+        }
     }
 
 }

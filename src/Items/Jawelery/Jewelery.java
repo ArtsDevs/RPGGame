@@ -19,6 +19,7 @@ public class Jewelery extends Items{
 
     public double requireStrength;
     public double durablity = 0;
+    public static int JewelleryEq[] = new int[100];
 
     public Jewelery(int dimension_x, int dimension_y, String name, int id, double improveHealth, double improveMana,
                    double improveSpeedAttack, double improveDeffence, double improveAttack, double improveBlock,
@@ -39,6 +40,19 @@ public class Jewelery extends Items{
         this.improveCrit = improveCrit;
         this.requireStrength = requireStrength;
         this.durablity = durablity;
+    }
+    public static void InitJewelleryEq(){
+        for(int x = 0;x<100;x++){
+            JewelleryEq[x] = -1;
+        }
+    }
+    public static void addJewelleryToEq(int addId){
+        for(int x = 0; x <100;x++){
+            if(JewelleryEq[x] == -1){
+                JewelleryEq[x] =JeweleryList.JewelleryArray[addId].id
+                break;
+            }
+        }
     }
 
 

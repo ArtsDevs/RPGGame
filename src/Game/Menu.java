@@ -1,0 +1,27 @@
+package Game;
+import java.util.Scanner;
+
+public class Menu {
+    // case dla kazdego switcha danej instacji do wywoływania menu, mozna dodawac kolejne opcje
+
+    public static void PlayerMenu() {
+        Scanner scanner = new Scanner(System.in)
+        System.out.println("(e)ekwipunek/(p)wyposażenie/(s)statystyki/(x)wróć/(q)wyjdź z gry");
+        String x = scanner.next();
+
+        if (x.equals("s")) {
+           Player.getStats();
+            Menu();
+        } else if (x.equals("e")) {
+           // Player.Eq(); potem zrobie metode żeby całe eq wypisywała
+            Menu();
+        } else if (x.equals("p")) {
+           // Eq.gearOn(); też dodam z mojej gry, do pokazywania co mamy "na sobie"
+            Menu();
+        } else if (x.equals("x")) {
+            return;
+        } else if(x.equals("q")){
+            System.exit(1);
+        }
+    }
+}

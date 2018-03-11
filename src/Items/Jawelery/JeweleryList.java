@@ -17,5 +17,5 @@ public class JeweleryList {
     static Jewelery Jewelery4 = new Jewelery(4, 5, "Rozmazana kupa", 124, 10, 10, 10,
             10, 10, 10, 10, 10, 10,10,4,1,0);
 
-    public static Jewelery JeweleryArray[] = {Jewelery0, Jewelery1, Jewelery2, Jewelery3, Jewelery4};
+    public static Jewelery JewelleryArray[] = {Jewelery0, Jewelery1, Jewelery2, Jewelery3, Jewelery4};
 }

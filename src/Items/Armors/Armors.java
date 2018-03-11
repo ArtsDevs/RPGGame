@@ -19,6 +19,7 @@ public class Armors extends Items {
 
     public double requireStrength;
     public double durablity;
+    public static int ArmorsEq[] = new int[100];
 
     public Armors(int dimension_x, int dimension_y, String name, int id, double improveHealth, double improveMana,
                    double improveSpeedAttack, double improveDeffence, double improveAttack, double improveBlock,
@@ -40,6 +41,21 @@ public class Armors extends Items {
         this.requireStrength = requireStrength;
         this.durablity = durablity;
 
+    }
+    /* osobny eq dla każdego rodzaju itemu, inicjalizuje że kazdy slot ma wartosc -1, potem porównuje do tego -1 i wpisuje id itemu na dane miejsce
+    na 0 to nie działa, bo id sie zaczynają od 0.     */
+    public static void InitArmorsEq(){
+        for(int x = 0;x<100;x++){
+            ArmorsEq[x] = -1;
+        }
+    }
+    public static void addShieldToEq(int addId){
+        for(int x = 0; x <100;x++){
+            if(ArmorsEq[x] == -1){
+               ArmorsEq[x] = ArmorsList.ArmorsArray[addId].id;
+                break;
+            }
+        }
     }
 
 }

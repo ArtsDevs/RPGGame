@@ -21,6 +21,7 @@ public class Weapons extends Items {
     public double requireStrength;
     public double durablity;
     public int id;
+    public static int WeaponsEq[] = new int[100];
 
 
 
@@ -44,6 +45,19 @@ public class Weapons extends Items {
         this.requireStrength = requireStrength;
         this.durablity = durablity;
 
+    }
+    public static void InitWeaponEq(){
+        for(int x = 0;x<100;x++){
+            WeaponsEq[x] = -1;
+        }
+    }
+    public static void addWeaponToEq(int addId){
+        for(int x = 0; x <100;x++){
+            if(WeaponsEq[x] == -1){
+                WeaponsEq[x] = WeaponsList.SwordsArray[addId].id;
+                break;
+            }
+        }
     }
 
 }

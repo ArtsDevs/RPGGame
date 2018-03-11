@@ -1,11 +1,11 @@
 package Game;
 
+import Classes.Mage;
 import Classes.Rogue;
 import Classes.Warrior;
+import Additional.InvalidClassRange;
 
 import java.util.Scanner;
-
-import Additional.InvalidClassRange;
 
 public class MakePlayer {
 
@@ -37,7 +37,7 @@ public class MakePlayer {
 	public static void setClass() {
     	int playerClass = scanner.nextInt();
         Player.setMyClass(playerClass);
-        
+
         	if (Player.getMyClass() == 1 ){
                 Warrior warrior = new Warrior(100, 100, 30, 30, 0.8, 5, 10, 3, 5, 5, 5, getName());
                 System.out.println("Wybrałeś/aś wojownika, powodzenia!");
@@ -47,9 +47,12 @@ public class MakePlayer {
                 System.out.println("Wybrałeś/aś łotra, powodzenia!");
             }
             else if (Player.getMyClass() == 3){
-                //Szaman do stworzenia
+                Mage mage = new Mage(70, 70, 80, 80, 1, 3, 7, 3, 8, 4, 2, getName());
+                System.out.println("Wybrałeś/aś maga, powodzenia z maną zią!");
             }
-            else if(Player.getMyClass() > 3)
+            else if(Player.getMyClass() > 3){
+
+
 				try {
 					throw new InvalidClassRange("Wybierz ponownie");
 				} catch (InvalidClassRange e) {
@@ -59,5 +62,5 @@ public class MakePlayer {
 				}
         	Move.Camp();
         }
-    }
-   
+           
+   }}

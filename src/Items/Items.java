@@ -12,10 +12,10 @@ public class Items {
 
      */
 
-    public String name;
-    public int dimension_x;
-    public int dimension_y;
-    public int id;
+    public static String name;
+    public static int dimension_x;
+    public static int dimension_y;
+    public static int id;
 
 
 
@@ -33,4 +33,3 @@ public class Items {
 
 
 }
-

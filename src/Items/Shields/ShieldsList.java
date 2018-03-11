@@ -1,4 +1,4 @@
-package Items;
+package Items.Shields;
 
 public class ShieldsList {
 

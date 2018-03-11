@@ -1,19 +1,13 @@
 import Game.Player;
-import Items.Armors;
-import Items.Weapons;
-import Items.WeaponsList;
+import Items.Weapons.WeaponsList;
 
-import Items.ArmorsList;
-import Items.JeweleryList;
-
-
-import static Items.WeaponsList.SwordsArray;
+import Items.Armors.ArmorsList;
+import Items.Jawelery.JeweleryList;
 
 public class Main {
 
     public static void main(String args[]) {
-
-
+        
         /*
         TO DO:
         1. Zrobić ekwipunek.
@@ -26,7 +20,7 @@ public class Main {
 
     }
 
-    public static void getItem(int weaponId){
+    /*public static void getItem(int weaponId){
         double improveHealth;
         double improveMana;
         double improveSpeedAttack;
@@ -107,4 +101,5 @@ public class Main {
             Player.setCrit(improveCrit);
         }
     }
+    */
 }

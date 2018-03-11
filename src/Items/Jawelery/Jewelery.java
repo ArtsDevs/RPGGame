@@ -1,4 +1,6 @@
-package Items;
+package Items.Jawelery;
+
+import Items.Items;
 
 public class Jewelery extends Items{
 

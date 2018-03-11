@@ -1,4 +1,4 @@
-package Items;
+package Items.QuestItems;
 
 public class QuestitemsList {
 

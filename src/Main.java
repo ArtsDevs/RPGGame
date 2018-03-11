@@ -7,7 +7,7 @@ import Items.Jawelery.JeweleryList;
 public class Main {
 
     public static void main(String args[]) {
-        
+
         /*
         TO DO:
         1. Zrobić ekwipunek.

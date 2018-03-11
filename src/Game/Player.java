@@ -294,7 +294,7 @@ public class Player {
 
 	public static boolean takeDamage(double damage) {
 
-		if(Random.Block() == true) {
+		if(Random.Block()) {
 			damage *= 0.2;
 			health = getHealth() - damage;
 			System.out.println("Zablokowaleś część obrażeń. Masz teraz: " + getHealthBar() + " punktow zycia ");

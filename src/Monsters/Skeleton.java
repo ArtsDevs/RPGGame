@@ -23,14 +23,12 @@ public class Skeleton extends Monster {
         }
     }
 
-    public static void dealDamage() {
+    static void dealDamage() {
         physicAttack(getDamageMin(), getDamageMax()); //Normalny atak
     }
 
-    public static void dealMagicDamage() {
-        MonsterMagic monsterMagic = new MonsterMagic();
-
-        monsterMagic.useFireBall();
+    static void dealMagicDamage() {
+        MonsterMagic.useFireBall();
     }
 
 }

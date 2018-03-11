@@ -7,15 +7,6 @@ import Additional.Random;
 
 public class Monster {
 
-
-    //Constants
-    private static final int HEALTH_POTIONS_MAX = 2;
-    private static final int HEALTH_POTIONS_MIN = 0;
-
-
-    //Static variables
-    private static Monster current;
-
     //Properties (Constant)
     private static double healthMax;
     private static double manaMax;
@@ -37,7 +28,6 @@ public class Monster {
     //Variables
     private static double health;
     private static double mana;
-    private static int healthPotions;
 
 
     //Getters
@@ -47,10 +37,6 @@ public class Monster {
 
     public static double getResistance(){
         return resistance;
-    }
-
-    public static int getHealtPotion(int amount) {
-        return healthPotions;
     }
 
     public static double getHealth() {
@@ -81,7 +67,6 @@ public class Monster {
         return nameOfTheMonster;
     }
 
-
     public static int getLvl() {
         return lvl *= Player.getLvl();
     }
@@ -107,9 +92,6 @@ public class Monster {
     }
 
     //Setters
-    public void setHealthPotions(int amount) {
-        this.healthPotions = amount;
-    }
 
     public static void setDamage(double min, double max) {
         damageMin = min;
@@ -117,8 +99,8 @@ public class Monster {
     }
 
     public void setCoinDrop(int min, int max) {
-        this.coinDropMin = min;
-        this.coinDropMax = max;
+        coinDropMin = min;
+        coinDropMax = max;
     }
 
     public static void setHealth(double current, double max) {
@@ -173,13 +155,17 @@ public class Monster {
         Player.setExp(exp);
     }
 
-    public boolean useHealthPotions() {
-        if (this.healthPotions <= 0) {
-            return false;
-        } else {
-            this.healthPotions--;
-            setHealth(this.health + 20, getHealthMax());
-            return true;
+    public static void attack(){
+        double fight = Random.RInt(1, 2);
+
+        if (fight == 1){
+            if(mana >= 15)
+                magicAttack();
+            else
+                physicAttack(damageMin, damageMax);
+        }
+        else{
+            physicAttack(damageMin, damageMax);
         }
     }
 

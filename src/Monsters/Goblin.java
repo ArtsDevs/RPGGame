@@ -27,11 +27,11 @@ public class Goblin extends Monster {
 
     }
 
-    public static void dealDamage(){
+    static void dealDamage(){
         physicAttack(getDamageMin(), getDamageMax()); //Normalny atak
     }
 
-    public static void dealMagicDamage(){
+    static void dealMagicDamage(){
         MonsterMagic.useStealHealth();
     }
 }

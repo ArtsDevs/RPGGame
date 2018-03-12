@@ -52,6 +52,9 @@ public class Move {
                 System.out.println("Dodałeś sobie 50 expa");
                 Camp();
 
+            case "m":
+                Menu.PlayerMenu();
+
             default:
                 System.out.println("Co Ty odpierdalasz?");
                 Camp();

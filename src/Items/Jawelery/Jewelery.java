@@ -49,7 +49,7 @@ public class Jewelery extends Items{
     public static void addJewelleryToEq(int addId){
         for(int x = 0; x <100;x++){
             if(JewelleryEq[x] == -1){
-                JewelleryEq[x] =JeweleryList.JewelleryArray[addId].id
+                JewelleryEq[x] =JeweleryList.JewelleryArray[addId].id;
                 break;
             }
         }

@@ -1,6 +1,8 @@
 package Items.Weapons;
 
 import Items.Items;
+import Game.Player;
+
 
 public class Weapons extends Items {
 
@@ -22,6 +24,8 @@ public class Weapons extends Items {
     public double durablity;
     public int id;
     public static int WeaponsEq[] = new int[100];
+    public static String currentWeaponName = WeaponsList.SwordsArray[currentWeapon].name;
+    public static int currentWeapon;
 
 
 
@@ -60,5 +64,43 @@ public class Weapons extends Items {
         }
     }
 
+    //odejmuje staty z broni aktualnie ubranej i zwraca ją do ekwipunku
+
+    public static void unequipWeapon(int current)
+    {
+        Player.setAttack( - WeaponsList.SwordsArray[current].improveAttack);
+        Player.setHealth( - WeaponsList.SwordsArray[current].improveHealth,- WeaponsList.SwordsArray[current].improveHealth);
+        Player.setDeffence(- WeaponsList.SwordsArray[current].improveDeffence);
+        Player.setMana( -WeaponsList.SwordsArray[current].improveMana,-WeaponsList.SwordsArray[current].improveMana );
+        Player.setAgility(-WeaponsList.SwordsArray[current].improveAgility);
+        Player.setCrit(-WeaponsList.SwordsArray[current].improveCrit);
+        Player.setIntelligence(-WeaponsList.SwordsArray[current].improveIntelligence);
+        Player.setBlock(-WeaponsList.SwordsArray[current].improveBlock);
+        Player.setVitality(-WeaponsList.SwordsArray[current].improveVitality);
+        Player.setStrength(-WeaponsList.SwordsArray[current].improveStrength);
+        Player.setSpeedAttack(-WeaponsList.SwordsArray[current].improveSpeedAttack);
+
+        addWeaponToEq(current);
+    }
+
+    public static void setCurrentWeapon(int current){
+
+        currentWeapon = current;
+        currentWeaponName = WeaponsList.SwordsArray[currentWeapon].name;
+        Player.setAttack(WeaponsList.SwordsArray[current].improveAttack);
+        Player.setHealth(WeaponsList.SwordsArray[current].improveHealth,WeaponsList.SwordsArray[current].improveHealth);
+        Player.setDeffence(WeaponsList.SwordsArray[current].improveDeffence);
+        Player.setMana( WeaponsList.SwordsArray[current].improveMana,WeaponsList.SwordsArray[current].improveMana );
+        Player.setAgility(WeaponsList.SwordsArray[current].improveAgility);
+        Player.setCrit(WeaponsList.SwordsArray[current].improveCrit);
+        Player.setIntelligence(WeaponsList.SwordsArray[current].improveIntelligence);
+        Player.setBlock(WeaponsList.SwordsArray[current].improveBlock);
+        Player.setVitality(WeaponsList.SwordsArray[current].improveVitality);
+        Player.setStrength(WeaponsList.SwordsArray[current].improveStrength);
+        Player.setSpeedAttack(WeaponsList.SwordsArray[current].improveSpeedAttack);
+
+        //i jeszcze trzeba dodać żeby usunęło ubieraną broń z eq
+
+    }
 }
 

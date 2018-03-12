@@ -3,7 +3,8 @@ package Items.QuestItems;
 import Items.Items;
 
 public class QuestItems extends Items {
-    public static int QuestItemsEq[] = new int[100]
+
+    public static int QuestItemsEq[] = new int[100];
 
     public  QuestItems(int dimension_x, int dimension_y, String name, int id){
         this.dimension_x = dimension_x;
@@ -14,7 +15,7 @@ public class QuestItems extends Items {
     }
     public static void InitQuestItemsEq(){
         for(int x = 0;x<100;x++){
-            QuestItemsEq();[x] = -1;
+            QuestItemsEq[x] = -1;
         }
     }
     public static void addQuestItemToEq(int addId){
